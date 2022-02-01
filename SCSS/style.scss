@@ -1,0 +1,440 @@
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,500;1,600&family=Roboto+Condensed:wght@300;400;700&display=swap");
+// veriabables
+$bg-color: #ffffff;
+$main-color: #7f5af0;
+$Headline: #1f1235;
+$subHeadline: #1b1425;
+$Headline-size: 2rem;
+$subHeadline-size: 0.8rem;
+// Univarsal style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: $bg-color;
+  background-image: url(https://i.pinimg.com/564x/a9/a9/0a/a9a90ae6d2bd2fea171a2dc5baec063f.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  font-weight: 400;
+}
+a,
+button {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $Headline;
+
+  &:hover {
+    transition: 0.4s;
+  }
+}
+nav {
+  margin: 0.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    cursor: pointer;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $bg-color;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+
+    a.first-a {
+      color: $main-color;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: $main-color;
+      font-weight: 700;
+    }
+  }
+}
+
+main {
+  margin: 4rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div h1 {
+    font-size: 6rem;
+    color: $Headline;
+    span {
+      color: $main-color;
+    }
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    margin-top: 1.5em;
+    font-weight: 500;
+    color: $subHeadline;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5em;
+    font-weight: 500;
+    color: $main-color;
+    background-color: #ffffff;
+  }
+  button:hover {
+    background-color: $main-color;
+    color: $Headline;
+  }
+}
+
+// services section
+.services-heading h1 {
+  margin-bottom: 2rem;
+  min-width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: $Headline;
+  font-weight: 500;
+  span {
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+
+.services-div {
+  margin: 0.8rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .item,
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 30%;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: $Headline;
+      text-transform: capitalize;
+      margin: 0.5rem;
+    }
+    p {
+      color: $subHeadline-size;
+      text-align: center;
+      font-size: 0.8rem;
+      margin: 0.5rem;
+    }
+    a {
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      padding: 0.5em;
+      font-weight: 300;
+      color: #fff;
+      background-color: $main-color;
+
+      &:hover {
+        background-color: #ffffff;
+        color: $Headline;
+      }
+    }
+  }
+  .item {
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 1em;
+    margin: 0.5rem;
+    border-radius: 1em;
+  }
+}
+
+.services-info {
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1.2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5em;
+    font-weight: 300;
+    color: #fff;
+    background-color: $main-color;
+  }
+  button:hover {
+    background-color: #ffffff;
+    color: $Headline;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: $Headline;
+    text-transform: capitalize;
+    span {
+      color: $main-color;
+    }
+  }
+  p {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    color: $subHeadline;
+    text-transform: capitalize;
+  }
+}
+
+// blog section
+.Blog-heading h1 {
+  margin-bottom: 2rem;
+  min-width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: $Headline;
+  font-weight: 500;
+  span {
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+
+.Blog-div {
+  margin: 0.8rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .item,
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    // text-align: center;
+    font-size: 1.5rem;
+    color: $Headline;
+    text-transform: capitalize;
+    margin: 0.5rem;
+    // align-self: flex-start;
+  }
+  p {
+    color: $subHeadline-size;
+    // text-align: center;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+  a {
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5em;
+    font-weight: 300;
+    color: #fff;
+    background-color: $main-color;
+    align-self: flex-start;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $Headline;
+    }
+  }
+  .item {
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 1em;
+    margin: 0.5rem;
+    border-radius: 1em;
+  }
+}
+//  our team section
+.Team-heading h1 {
+  margin-bottom: 2rem;
+  min-width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: $Headline;
+  font-weight: 500;
+  span {
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+
+.Team-div {
+  margin: 0.8rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .item,
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: $main-color;
+    text-transform: capitalize;
+    margin: 0.2rem;
+  }
+  h2 {
+    color: $subHeadline-size;
+    font-size: 1rem;
+    margin: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 1em;
+    margin: 0.5rem;
+    width: 80%;
+    text-align: center;
+    // border-radius: 0.5em;
+  }
+  .item {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 1em;
+    margin: 0.5rem;
+    // border-radius: 1em;
+  }
+}
+
+// testomonial section
+.Testomonial-heading h1 {
+  margin-bottom: 1rem;
+  min-width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: $Headline;
+  font-weight: 500;
+  span {
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+.Testamonial-div {
+  margin: 0.8rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  img {
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+    margin: 0 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: $main-color;
+    text-transform: capitalize;
+    margin: 0.2rem;
+    span {
+      margin-left: 9rem;
+    }
+  }
+  p {
+    color: $Headline;
+    font-size: 1rem;
+    margin: 0.2rem;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 1em;
+    margin: 0.5rem;
+    border-radius: 1em;
+  }
+}
+// footer
+
+footer {
+  .Addres {
+    margin: 3rem 5rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    h1 {
+      justify-self: flex-start;
+      align-self: center;
+      cursor: pointer;
+      font-family: "Barlow", sans-serif;
+      font-weight: 700;
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: $main-color;
+    }
+    h2 {
+      font-size: 2rem;
+      color: $Headline;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      color: $subHeadline-size;
+      font-size: 1rem;
+      margin: 0.2rem;
+      font-weight: 300;
+    }
+  }
+
+  .links {
+    margin: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      margin: 1rem 0;
+      width: 25%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      list-style: none;
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+
+    a {
+      color: $bg-color;
+    }
+  }
+}
